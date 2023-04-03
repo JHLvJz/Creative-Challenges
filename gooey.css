@@ -1,0 +1,84 @@
+body {
+  background: #333;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  animation: move 3s infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  filter: url("#goo");
+}
+
+.big-circle {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+  top: 51%;
+  left: 53%;
+  animation: scale 3s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform-origin: 70% -160%;
+    transform: rotate(0deg);
+  }
+  5% {
+    transform-origin: 70% -220%;
+    transform: rotate(0deg);
+  }
+  49% {
+    transform-origin: 70% 0%;
+    transform: rotate(360deg);
+  }
+  50% {
+    transform-origin: 80% 70%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: 80% 290%;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  5% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  8% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  55% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  95% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
