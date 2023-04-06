@@ -1,0 +1,11 @@
+.square {
+  position: absolute;
+  background: #5677fc;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  filter: url("#blur");
+}
