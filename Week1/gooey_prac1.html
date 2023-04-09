@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="gooey_prac1.css">
+  </head>
+  <body>
+  </body>
+  <div class="square"></div>
+    <svg>
+      <defs>
+        <filter id="drop-shadow">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="shadow"/>
+          <feOffset in="shadow" dx="10" dy="10" result="shadow"/>
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0" result="shadow"/>
+          <feBlend in="SourceGraphic" in2="shadow"/>
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>
+
