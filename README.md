@@ -4,6 +4,6 @@
 
 ## Week1
 
-<h4 style="color: orange;">[ 끈적이 효과 ] </h4>
+<h4>🍯 끈적이 효과 🍯</h4>
 <p>Topic: svg태그 / animation / filter</p>
 <p>MyNote: https://gold-louse-14e.notion.site/Gooey-a1c8aa037fd64b308c8acb9ac9b3ef77</p>
