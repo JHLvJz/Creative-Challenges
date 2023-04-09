@@ -1,0 +1,58 @@
+body {
+  background: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: #aaa;
+  filter: blur(10px) contrast(30);
+}
+
+.ball {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.ball:first-child {
+  left: 30%;
+  animation: ani-1 2s ease infinite;
+}
+
+.ball:last-child {
+  left: 70%;
+  animation: ani-2 2s ease infinite;
+}
+
+@keyframes ani-1 {
+  0% {
+    left: 30%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 30%;
+  }
+}
+
+@keyframes ani-2 {
+  0% {
+    left: 70%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 70%;
+  }
+}
