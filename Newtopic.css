@@ -3,6 +3,42 @@ p {
   animation-name: slidein; /* 별명 붙이기 */
   animation-iteration-count: infinite;
   animation-direction: alternate; /* 애니메이션이 종료되면 다시 처음부터 시작할지 / 역방향으로 진행할지 지정 */
+
+  -moz-animation-duratin: 3s;
+  -webkit-animation-duration: 3s;
+
+  -moz-animation-name: slidein;
+  -webkit-animation-name: slidein;
+
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+}
+
+@-moz-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 @keyframes slidein {
