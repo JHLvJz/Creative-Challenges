@@ -1,6 +1,8 @@
 p {
   animation-duration: 3s; /* 재생시간 */
   animation-name: slidein; /* 별명 붙이기 */
+  animation-iteration-count: infinite;
+  animation-direction: alternate; /* 애니메이션이 종료되면 다시 처음부터 시작할지 / 역방향으로 진행할지 지정 */
 }
 
 @keyframes slidein {
@@ -12,11 +14,5 @@ p {
   to {
     margin-left: 0%;
     width: 100%;
-  }
-
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
-    width: 150%;
   }
 }
